@@ -9,7 +9,7 @@ menu_($class='inline || unstyled', $array() ))
 listgroup_($total=20,$icon=false,$badge=false)
 
 
-img_($i, $class='')
+img_($ing_name, $class='')
 
 thumb_($i=1 || random, $class='')
 
