@@ -81,7 +81,7 @@ function br_($total=1){
 }
 
 function pagination_($large=false){
-	$large = ($large)? "class='pagination-lg'" : '';
+	$large = ($large)? "pagination-lg" : '';
 	echo '<ul class="pagination '.$large.' "> <li><a href="#">&laquo;</a></li> <li><a href="#">1</a></li> <li><a href="#">2</a></li> <li><a href="#">3</a></li> <li><a href="#">4</a></li> <li><a href="#">5</a></li> <li><a href="#">&raquo;</a></li> </ul>';
 }
 
