@@ -11,12 +11,12 @@ listgroup_($total=20,$icon=false,$badge=false)
 
 img_($ing_name, $class='')
 
-thumb_($i=1 || random, $class='')
+thumb_($i=1 || random, $class=false)
 
-avatar_($i=1 || random, $class='')
+avatar_($i=1 || random, $class=false)
 
 
-btn_($str='Click Here', $class='')
+btn_($str='Click Here', $class=false)
 
 icon_($str='heart')
 
