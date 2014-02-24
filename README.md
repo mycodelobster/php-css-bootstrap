@@ -11,9 +11,9 @@ listgroup_($total=20,$icon=false,$badge=false)
 
 img_($i, $class='')
 
-thumb_($i=1, $class='')
+thumb_($i=1 || random, $class='')
 
-avatar_($i=1, $class='')
+avatar_($i=1 || random, $class='')
 
 
 btn_($str='Click Here', $class='')
