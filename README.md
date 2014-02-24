@@ -24,3 +24,5 @@ icon_($str='heart')
 href_($str='Click Here', $class=false)
 
 br_()
+
+pagination_($large=false)
