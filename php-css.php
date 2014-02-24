@@ -45,15 +45,18 @@ function listgroup_($total=20,$icon=false,$badge=false){
 }
 
 // IMAGE
-function img_($i, $class=''){
+function img_($i, $class=false){
+	$class = ($class)? "class='$class'" : '';
 	echo "<img src='img/$i' $class />";
 }
-function thumb_($i=1, $class=''){
+function thumb_($i=1, $class=false){
 	if($i=="random") $i = rand(1,10);
+	$class = ($class)? "class='$class'" : '';
 	echo "<img src='img/thumbnail/$i.jpg' $class />";
 }
-function avatar_($i=1, $class=''){
+function avatar_($i=1, $class=false){
 	if($i=="random") $i = rand(1,10);
+	$class = ($class)? "class='$class'" : '';
 	echo "<img src='img/profile/$i.jpg' $class />";
 }
 
