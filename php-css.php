@@ -21,6 +21,15 @@ function name_($number=2){
 
 }
 
+function menu_($class='inline', $array=array('Home','About','Showcase','Help','Contact Us')){
+	$class = "list-".$class;
+	echo "<ul class='$class'>";
+	foreach ($array as $item){ 
+		echo "<li><a href=''>" . $item . "</a></li>";
+	}
+	echo "</ul>";
+}
+
 function li_($total=10,$listgroup=false,$icon=false){
 	$array = "Home,About Us,Contact,How it Work,Showcase,Member,Category,Listing,Our Team,Join Now";
 	$li = explode(",", $array);
@@ -57,6 +66,11 @@ function btn_($str='Click Here', $class=''){
 
 function icon_($str='heart'){
 	echo "<i class='glyphicon glyphicon-$str'></i>";
+}
+
+function href_($str='Click Here', $class=false){
+	$class = ($class)? "class='$class'" : '';
+	echo "<a href='#' $class>$str</a>";
 }
 
 ?>
