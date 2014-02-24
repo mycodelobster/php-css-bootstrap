@@ -45,9 +45,9 @@ function listgroup_($total=20,$icon=false,$badge=false){
 }
 
 // IMAGE
-function img_($i, $class=false){
+function img_($img_name, $class=false){
 	$class = ($class)? "class='$class'" : '';
-	echo "<img src='img/$i' $class />";
+	echo "<img src='img/$img_name' $class />";
 }
 function thumb_($i=1, $class=false){
 	if($i=="random") $i = rand(1,10);
