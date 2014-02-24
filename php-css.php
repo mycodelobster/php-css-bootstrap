@@ -73,5 +73,11 @@ function href_($str='Click Here', $class=false){
 	echo "<a href='#' $class>$str</a>";
 }
 
+function br_($total=1){
+	for ($i=0; $i < $total; $i++) { 
+		echo "<br />";
+	}
+}
+
 ?>
 
