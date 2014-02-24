@@ -6,7 +6,7 @@ name_($number=2)
 
 menu_($class='inline || unstyled', $array() ))
 
-li_($total=10,$listgroup=false,$icon=false)
+listgroup_($total=20,$icon=false,$badge=false)
 
 
 img_($i, $class='')
