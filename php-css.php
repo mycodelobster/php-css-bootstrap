@@ -30,18 +30,16 @@ function menu_($class='inline', $array=array('Home','About','Showcase','Help','C
 	echo "</ul>";
 }
 
-function li_($total=10,$listgroup=false,$icon=false){
-	$array = "Home,About Us,Contact,How it Work,Showcase,Member,Category,Listing,Our Team,Join Now";
-	$li = explode(",", $array);
+function listgroup_($total=20,$icon=false,$badge=false){
+	$array = "Gaming Pranks Sketch Music Parody Comedy Informative Animal Food Sport Reviews Babies Fail MakeUp Fashion Tutorials MusicCover Action Art Reaction";
+	$li = explode(" ", $array);
 	shuffle($li);
-
-	$listgroup = ($listgroup)? "class='list-group' " : '';
-	$listgroupitem = ($listgroup)? "class='list-group-item' " : '';
-
 	$icon = ($icon)? "<i class='glyphicon glyphicon-$icon'></i>" : '';
-	echo "<ul $listgroup>";
+	$badge = ($badge)? "<span class='badge'>" .rand(10,100). "</span>" : '';
+
+	echo "<ul 'class='list-group'>";
 	for ($i=0; $i < $total; $i++) { 
-		echo "<li $listgroupitem><a href=''>".$li[$i]." $icon</a></li>";
+		echo "<li class='list-group-item'><a href=''>".$li[$i]." $icon $badge</a></li>";
 	}
 	echo "</ul>";
 }
