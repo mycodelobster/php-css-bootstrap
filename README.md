@@ -19,3 +19,6 @@ avatar_($i=1, $class='')
 btn_($str='Click Here', $class='')
 
 icon_($str='heart')
+
+
+href_($str='Click Here', $class=false)
